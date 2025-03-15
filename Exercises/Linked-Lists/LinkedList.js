@@ -15,36 +15,39 @@ class LinkedList {
 
   printList() {
     let temp = this.head;
+    const values = [];
     while (temp !== null) {
-      console.log(temp.value);
+      values.push(temp.value);
       temp = temp.next;
     }
+    return values;
   }
 
   getHead() {
     if (this.head === null) {
-      console.log("Head: null");
+      return null;
     } else {
-      console.log("Head: " + this.head.value);
+      return this.head.value;
     }
   }
 
   getTail() {
     if (this.tail === null) {
-      console.log("Tail: null");
+      return null;
     } else {
-      console.log("Tail: " + this.tail.value);
+      return this.tail.value;
     }
   }
 
   getLength() {
-    console.log("Length: " + this.length);
+    return this.length;
   }
 
   makeEmpty() {
     this.head = null;
     this.tail = null;
     this.length = 0;
+    return this;
   }
 
   push(value) {
@@ -90,39 +93,4 @@ class LinkedList {
   }
 }
 
-function test() {
-  let myLinkedList = new LinkedList(1);
-  myLinkedList.push(2);
-
-  // (2) Items in LL - Returns 2 Node
-  if (myLinkedList.length !== 0) {
-    console.log(myLinkedList.pop().value);
-  } else {
-    console.log("null");
-  }
-
-  // (1) Item in LL - Returns 1 Node
-  if (myLinkedList.length !== 0) {
-    console.log(myLinkedList.pop().value);
-  } else {
-    console.log("null");
-  }
-
-  // (0) Items in LL - Returns null
-  if (myLinkedList.length !== 0) {
-    console.log(myLinkedList.pop().value);
-  } else {
-    console.log("null");
-  }
-}
-
-test();
-
-/*
-    EXPECTED OUTPUT:
-    ----------------
-    2
-    1
-    null
-
-*/
+module.exports = { LinkedList, Node };
