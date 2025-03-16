@@ -37,9 +37,9 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           # Disable JavaScript Standard linter
           VALIDATE_JAVASCRIPT_STANDARD: false
-          # Enable Prettier instead
-          VALIDATE_PRETTIER: true
-          # Optionally add ESLint for additional checks
-          VALIDATE_JAVASCRIPT_ES: true
+          # # Enable Prettier instead
+          # VALIDATE_PRETTIER: true
+          # # Optionally add ESLint for additional checks
+          # VALIDATE_JAVASCRIPT_ES: true
           # Specify default linter for JavaScript files
           JAVASCRIPT_DEFAULT_STYLE: "prettier"
