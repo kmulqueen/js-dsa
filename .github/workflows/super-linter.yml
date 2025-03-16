@@ -35,11 +35,11 @@ jobs:
         uses: super-linter/super-linter@4e8a7c2bf106c4c766c816b35ec612638dc9b6b2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          # Disable JavaScript Standard linter
-          VALIDATE_JAVASCRIPT_STANDARD: false
-          # # Enable Prettier instead
-          # VALIDATE_PRETTIER: true
-          # # Optionally add ESLint for additional checks
-          # VALIDATE_JAVASCRIPT_ES: true
-          # Specify default linter for JavaScript files
+          # Disable all linters by default
+          VALIDATE_ALL_CODEBASE: false
+          # Then explicitly enable only the ones you want
+          VALIDATE_JAVASCRIPT_PRETTIER: true
+          VALIDATE_JAVASCRIPT_ES: true
+          VALIDATE_JSCPD: false
+          # JavaScript formatting using prettier
           JAVASCRIPT_DEFAULT_STYLE: "prettier"
