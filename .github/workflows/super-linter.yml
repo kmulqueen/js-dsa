@@ -38,11 +38,11 @@ jobs:
           # Use "validate specific linters" mode
           VALIDATE_ALL_CODEBASE: false
           # Specifically enable just these linters
-          VALIDATE_JAVASCRIPT_PRETTIER: true
+          VALIDATE_JAVASCRIPT_ES: true
           VALIDATE_YAML: true
           VALIDATE_MARKDOWN: true
-          # Set JavaScript style to prettier
-          JAVASCRIPT_DEFAULT_STYLE: "prettier"
+          # Tell super-linter to use Prettier for JS files
+          JAVASCRIPT_ES_CONFIG_FILE: .eslintrc.js
           # Optional: Configure linter behavior
           # DEFAULT_BRANCH: main
           # LINTER_RULES_PATH: /

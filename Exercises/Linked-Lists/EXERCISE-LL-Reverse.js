@@ -23,22 +23,22 @@ class LinkedList {
 
   getHead() {
     if (this.head === null) {
-      console.log("Head: null");
+      console.log('Head: null');
     } else {
-      console.log("Head: " + this.head.value);
+      console.log('Head: ' + this.head.value);
     }
   }
 
   getTail() {
     if (this.tail === null) {
-      console.log("Tail: null");
+      console.log('Tail: null');
     } else {
-      console.log("Tail: " + this.tail.value);
+      console.log('Tail: ' + this.tail.value);
     }
   }
 
   getLength() {
-    console.log("Length: " + this.length);
+    console.log('Length: ' + this.length);
   }
 
   makeEmpty() {
@@ -175,12 +175,12 @@ function test() {
   myLinkedList.push(3);
   myLinkedList.push(4);
 
-  console.log("LL before reverse():");
+  console.log('LL before reverse():');
   myLinkedList.printList();
 
   myLinkedList.reverse();
 
-  console.log("\nLL after reverse():");
+  console.log('\nLL after reverse():');
   myLinkedList.printList();
 }
 

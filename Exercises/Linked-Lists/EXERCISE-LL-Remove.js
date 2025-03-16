@@ -23,22 +23,22 @@ class LinkedList {
 
   getHead() {
     if (this.head === null) {
-      console.log("Head: null");
+      console.log('Head: null');
     } else {
-      console.log("Head: " + this.head.value);
+      console.log('Head: ' + this.head.value);
     }
   }
 
   getTail() {
     if (this.tail === null) {
-      console.log("Tail: null");
+      console.log('Tail: null');
     } else {
-      console.log("Tail: " + this.tail.value);
+      console.log('Tail: ' + this.tail.value);
     }
   }
 
   getLength() {
-    console.log("Length: " + this.length);
+    console.log('Length: ' + this.length);
   }
 
   makeEmpty() {
@@ -161,22 +161,22 @@ function test() {
   myLinkedList.push(4);
   myLinkedList.push(5);
 
-  console.log("LL before remove():");
+  console.log('LL before remove():');
   myLinkedList.printList();
 
-  console.log("\nRemoved node:");
+  console.log('\nRemoved node:');
   console.log(myLinkedList.remove(2).value);
-  console.log("LL after remove() in middle:");
+  console.log('LL after remove() in middle:');
   myLinkedList.printList();
 
-  console.log("\nRemoved node:");
+  console.log('\nRemoved node:');
   console.log(myLinkedList.remove(0).value);
-  console.log("LL after remove() of first node:");
+  console.log('LL after remove() of first node:');
   myLinkedList.printList();
 
-  console.log("\nRemoved node:");
+  console.log('\nRemoved node:');
   console.log(myLinkedList.remove(2).value);
-  console.log("LL after remove() of last node:");
+  console.log('LL after remove() of last node:');
   myLinkedList.printList();
 }
 

@@ -23,22 +23,22 @@ class LinkedList {
 
   getHead() {
     if (this.head === null) {
-      console.log("Head: null");
+      console.log('Head: null');
     } else {
-      console.log("Head: " + this.head.value);
+      console.log('Head: ' + this.head.value);
     }
   }
 
   getTail() {
     if (this.tail === null) {
-      console.log("Tail: null");
+      console.log('Tail: null');
     } else {
-      console.log("Tail: " + this.tail.value);
+      console.log('Tail: ' + this.tail.value);
     }
   }
 
   getLength() {
-    console.log("Length: " + this.length);
+    console.log('Length: ' + this.length);
   }
 
   makeEmpty() {
@@ -146,22 +146,22 @@ function test() {
   let myLinkedList = new LinkedList(1);
   myLinkedList.push(3);
 
-  console.log("LL before insert():");
+  console.log('LL before insert():');
   myLinkedList.printList();
 
   myLinkedList.insert(1, 2);
 
-  console.log("\nLL after insert(2) in middle:");
+  console.log('\nLL after insert(2) in middle:');
   myLinkedList.printList();
 
   myLinkedList.insert(0, 0);
 
-  console.log("\nLL after insert(0) at beginning:");
+  console.log('\nLL after insert(0) at beginning:');
   myLinkedList.printList();
 
   myLinkedList.insert(4, 4);
 
-  console.log("\nLL after insert(4) at end:");
+  console.log('\nLL after insert(4) at end:');
   myLinkedList.printList();
 }
 

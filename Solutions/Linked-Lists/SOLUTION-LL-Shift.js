@@ -23,22 +23,22 @@ class LinkedList {
 
   getHead() {
     if (this.head === null) {
-      console.log("Head: null");
+      console.log('Head: null');
     } else {
-      console.log("Head: " + this.head.value);
+      console.log('Head: ' + this.head.value);
     }
   }
 
   getTail() {
     if (this.tail === null) {
-      console.log("Tail: null");
+      console.log('Tail: null');
     } else {
-      console.log("Tail: " + this.tail.value);
+      console.log('Tail: ' + this.tail.value);
     }
   }
 
   getLength() {
-    console.log("Length: " + this.length);
+    console.log('Length: ' + this.length);
   }
 
   makeEmpty() {
@@ -112,21 +112,21 @@ function test() {
   if (myLinkedList.length !== 0) {
     console.log(myLinkedList.shift().value);
   } else {
-    console.log("null");
+    console.log('null');
   }
 
   // (1) Item in LL - Returns 1 Node
   if (myLinkedList.length !== 0) {
     console.log(myLinkedList.shift().value);
   } else {
-    console.log("null");
+    console.log('null');
   }
 
   // (0) Items in LL - Returns null
   if (myLinkedList.length !== 0) {
     console.log(myLinkedList.shift().value);
   } else {
-    console.log("null");
+    console.log('null');
   }
 }
 
