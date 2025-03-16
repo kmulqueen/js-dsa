@@ -106,7 +106,7 @@ class LinkedList {
   get(idx) {
     if (idx < 0 || idx >= this.length) return undefined;
     let temp = this.head;
-    for (i = 0; i < idx; i++) {
+    for (let i = 0; i < idx; i++) {
       temp = temp.next;
     }
     return temp;

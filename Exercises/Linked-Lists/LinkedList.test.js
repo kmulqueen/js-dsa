@@ -1,5 +1,5 @@
 // LinkedList.test.js
-const { LinkedList, Node } = require("./LinkedList");
+const { LinkedList } = require("./LinkedList");
 
 describe("LinkedList", () => {
   let myLinkedList;

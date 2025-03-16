@@ -34,5 +34,12 @@ jobs:
       - name: Super-linter
         uses: super-linter/super-linter@4e8a7c2bf106c4c766c816b35ec612638dc9b6b2
         env:
-          # Add this to provide the token
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Disable JavaScript Standard linter
+          VALIDATE_JAVASCRIPT_STANDARD: false
+          # Enable Prettier instead
+          VALIDATE_PRETTIER: true
+          # Optionally add ESLint for additional checks
+          VALIDATE_JAVASCRIPT_ES: true
+          # Specify default linter for JavaScript files
+          JAVASCRIPT_DEFAULT_STYLE: "prettier"
